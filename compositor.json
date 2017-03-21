@@ -1,0 +1,85 @@
+{
+  "name": "aarongarciah/sass-boilerplate",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "Sass Boilerplate",
+  "branch": "master",
+  "style": {
+    "name": "Material",
+    "componentSet": {
+      "nav": "nav/DarkAbsoluteNav",
+      "header": "header/GradientHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "Roboto, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "letterSpacing": "-0.01em"
+    },
+    "colors": {
+      "text": "#212121",
+      "background": "#fff",
+      "primary": "#2196f3",
+      "secondary": "#1565c0",
+      "highlight": "#ff4081",
+      "border": "#e0e0e0",
+      "muted": "#f5f5f5"
+    },
+    "layout": {
+      "centered": true,
+      "bannerHeight": "80vh",
+      "maxWidth": 896
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/aarongarciah/sass-boilerplate",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "sass-boilerplate",
+      "subhead": "A boilerplate for Sass projects using the 7-1 architecture pattern.",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "sass-boilerplate: A boilerplate for Sass projects using the 7-1 architecture pattern.",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "aarongarciah",
+          "repo": "sass-boilerplate"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "\n<p>This is a sample project using the <a href=\"http://sass-guidelin.es/#architecture\">7-1 architecture pattern</a> and sticking to <a href=\"http://sass-guidelin.es\">Sass Guidelines</a> writing conventions.</p>\n<p>Each folder of this project has its own <code>README.md</code> file to explain the purpose and add extra information. Be sure to browse the repository to see how it works.</p>\n<h2>Using the indented syntax</h2>\n<p>This boilerplate does not provide a <code>.sass</code> version as it would be painful to maintain both versions without an appropriate build process. However, it is very easy to convert this boilerplate to Sass indented syntax.</p>\n<p>Clone it, head into the project and then run:</p>\n<pre>sass-<span class=\"hljs-built_in\">convert</span> -F sass -<span class=\"hljs-built_in\">T</span> scss -i -R ./ &amp;&amp; <span class=\"hljs-built_in\">find</span> . -iname <span class=\"hljs-string\">&quot;*.sass&quot;</span> -exec bash -c &apos;mv <span class=\"hljs-string\">&quot;$0&quot;</span> <span class=\"hljs-string\">&quot;${0%\\.sass}.scss&quot;</span>&apos; {} \\;</pre>"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/aarongarciah/sass-boilerplate",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/aarongarciah",
+          "text": "aarongarciah"
+        }
+      ]
+    }
+  ]
+}
